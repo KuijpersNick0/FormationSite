@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <title>IT Academy</title>
+</head>
+<body>
+    <h1> IT Academy </h1>
+    <h2> Formations disponibles </h2>
+    <a class ="bouton" href="/formation/panier">Voir le panier</a>
+    <a class ="bouton" href="/formation/connection">Se connecter</a>
+    <table>
+        <tbody>
+            <tr>
+                <td scope="col"> Id</td>
+                <td scope="col">Nom</td>
+                <td scope="col">Prix</td>
+                <td scope="col">Début</td>
+                <td scope="col">Fin</td>
+                <td scope="col"></td>
+            </tr>
+            <% for (var i=0; i<formation.length; i++){ %>
+            <tr scope="row" id="bulletpoint">
+                    <td>
+                        <%=formation[i].idformation %> 
+                    </td>
+                    <td>
+                        <%=formation[i].Nom %> 
+                    </td>
+                    <td>
+                        <%=formation[i].Prix %> 
+                    </td>
+                    <td>
+                        <%=formation[i].Debut %> 
+                    </td>
+                    <td>
+                        <%=formation[i].Fin %> 
+                    </td>
+                    <td>
+                        <a class="bouton" href="/formation/<%= formation[i].idformation %> ">S'inscrire</a>
+                    </td>
+            </tr>
+            <% } %> 
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <title>IT Academy</title>
+</head>
+<body>
+    <h1> IT Academy </h1>
+    <h2> Entrer votre pseudo </h2>
+    <a class ="bouton" href="/formation">Retourner au catalogue de formation</a>
+
+    <div class="result" id="ajout-validation"></div>
+    <form action ="/formation/connection" method="POST" onsubmit="return required();">
+        <input id="pseudo" type="text" name="pseudo"/>   
+        <button> Sauver </button>
+    </form>
+
+    <script type="text/javascript">  
+        function required(){
+            let elt = document.getElementById("ajout-validation");
+            let newElt = document.getElementById("pseudo").value;
+            if(newElt==""){
+                elt.innerHTML = "Complétez la tache";
+                return false;
+            }
+            else{                
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

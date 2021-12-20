@@ -1,0 +1,25 @@
+body h1 {
+    text-align: center;
+    color: #0F316F;
+}
+body h2 {
+    color: #0F316F;
+}
+td, th {
+    border: 1px solid rgba(190, 190, 190, 0.39);
+    padding: 5px;
+    text-align: center;
+}
+
+.bouton {
+    color: #006407;
+    background-color:#A9A9A9;
+    border: none;
+    text-align: center;
+    font-weight: 900;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    text-decoration: none;
+}

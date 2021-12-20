@@ -1,0 +1,22 @@
+{
+  "name": "exomvc",
+  "version": "1.0.0",
+  "description": "Dans le cadre du cours techno.web un formulaire avec connection mySQL est deployé sur ma MV avec l'utilisisation d'un design pattern MVC",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kuijpers Nick",
+  "license": "ISC",
+  "dependencies": {
+    "alert": "^5.0.10",
+    "confirm-dialog": "^0.1.2",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15",
+    "popups": "^1.1.3"
+  }
+}
