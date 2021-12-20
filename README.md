@@ -2,4 +2,4 @@
 Site d'entrainement pour inscription aux formation
 
 étudiant:Kuijpers Nick
-/nmatricule: 20324
+/n matricule: 20324
